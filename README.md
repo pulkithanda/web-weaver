@@ -5,9 +5,9 @@
 </p>
 
 <p>
-⊛ This is a web dev project for a competition named web-weaver made with HTML, CSS, JS etc by @pulkithanda & @imsahiljain.<br>
+⊛ This is a web dev project for a competition named web-weaver made with HTML, CSS, JS etc <br>
 ⊛ The prompt was to make a hotel website with various sections listed below in detail some of them being: Covid-19 Guidelines Page, About Us Section,
-Hotels List Page, Gallery Page, Board Of Directors Section, Contact Us/Donate Section etc
+Hotels List Page, Gallery Page, Contact Us/Donate Section etc
 <br>
 ⊛ Key features: completely modern, responsive, multi dynamic page website & toggler. </p>
 
