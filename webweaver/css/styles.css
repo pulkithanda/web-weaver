@@ -453,7 +453,7 @@ body.dark-theme {
   text-align: center;
 }
 .top-subtitle {
-  margin-top: 33px;
+  margin-top: 43px;
 }
 .content .subtitle {
   font-family: Poppins;
@@ -466,9 +466,9 @@ body.dark-theme {
 
 .content .title {
   font-family: Poppins;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 80px;
+  margin-top: 13px;
+  font-weight: 1000;
+  font-size: 90px;
   line-height: 105px;
   letter-spacing: -0.04em;
   color: #000000;
@@ -482,4 +482,49 @@ body.dark-theme {
   align-items: center;
   text-align: center;
   left: calc(50% - 506px / 2);
+}
+.search-box{
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 30px 50px;
+  transform: translate(13%,15%);
+  height: 220px;
+  box-shadow: 0 2px 25px rgba(114, 114, 114, 0.1);
+  border: 1px solid #d8d8d8;
+}
+.search-box .input-box {
+  margin: 0 20px;
+}
+.search-box .input-box p {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 21.5px;
+  font-weight: 500;
+  letter-spacing: -.02rem;
+}
+
+.search-box .input-box input {
+  border: .6px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.1em;
+  font-family: Poppins;
+}
+
+.search-box .input-box input[type="Submit"]{
+  outline: none;
+  border: none;
+  background: #3E70F1;
+  color:white;
+  cursor: pointer;
+  padding: 14px;
+  width: 100px;
 }
