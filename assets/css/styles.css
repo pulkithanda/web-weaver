@@ -139,7 +139,7 @@ body.dark-theme {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 968px;
+  max-width: 80%;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -233,8 +233,8 @@ body.dark-theme {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: #1a1a1a;
+  background-color: #326dee;
+  color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
   font-weight: var(--font-semi-bold);
@@ -242,7 +242,7 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: #2059d4;
 }
 
 .button__header {
@@ -262,7 +262,7 @@ body.dark-theme {
 .button-flex {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.25rem;
+  column-gap: 0.5rem;
   padding: 0.75rem 1rem;
 }
 
@@ -437,9 +437,15 @@ body.dark-theme {
   }
 }
 .banner {
-  height: 95vh;
+  padding-top: 200px;
+	width: 100%;
+	height: 87vh;
+  background-image: url(../img/bg-dark.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 }
-.banner .background {
+/* .banner .background {
   position: absolute;
   width: 1336px;
   height: 689px;
@@ -450,30 +456,33 @@ body.dark-theme {
   box-sizing: border-box;
   border-radius: 35px;
   margin-top: 30px;
-}
+  background-image: url(https://cdn.dribbble.com/users/3178178/screenshots/14718756/media/f2aaf1b36b2567123cec8ce8859a0562.jpg?compress=1);
+  background-size: cover;
+} */
 .content {
   text-align: center;
 }
 .top-subtitle {
-  margin-top: 43px;
+  margin-top: 33px;
 }
 .content .subtitle {
   font-family: Poppins;
   font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 30px;
   line-height: 140.62%;
-  color: #000000;
+  letter-spacing: -0.04em;
+  color: #fff;
 }
 
 .content .title {
   font-family: Poppins;
-  margin-top: 13px;
+  margin-top: 83px;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 110px;
   line-height: 105px;
   letter-spacing: -0.04em;
-  color: #000000;
+  color: #fff;
 }
 
 .banner-subtitle {
@@ -486,19 +495,23 @@ body.dark-theme {
   left: calc(50% - 506px / 2);
 }
 .search-box{
-  position: absolute;
-  border-radius: 25px;
-  bottom: 0;
+  /* position: absolute; */
+  width: 58%;
+  border-radius: 15px;
+  /* bottom: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   background: #fff;
   padding: 30px 50px;
-  transform: translate(13%,15%);
-  height: 220px;
+  /* transform: translate(40%, 100%); */
+  min-height: 200px;
   box-shadow: 0 2px 25px rgba(114, 114, 114, 0.1);
   border: 1px solid #d8d8d8;
+  z-index: 99;
+  margin: auto;
+  margin-top: 15%;
 }
 .search-box .input-box {
   margin: 0 20px;
@@ -575,21 +588,46 @@ body.dark-theme {
   background: #d1d1d1;
   height: 400px;
 }
-/* .carousel .card-1{
-  background: #ed1c24;
+.carousel .card-1{
+  background-image: url(../img/h1.jpg);
+  background-size: cover;
+	background-position: center;
 }
 .carousel .card-2{
-  background: #0072bc;
+  background-image: url(../img/h2.jpg);
+  background-size: cover;
+	background-position: center;
 }
 .carousel .card-3{
-  background: #39b54a;
+  background-image: url(../img/h3.jpg);
+  background-size: cover;
+	background-position: center;
 }
 .carousel .card-4{
-  background: #f26522;
+  background-image: url(../img/h4.jpg);
+  background-size: cover;
+	background-position: center;
 }
 .carousel .card-5{
-  background: #630460;
-} */
+  background-image: url(../img/h5.jpg);
+  background-size: cover;
+	background-position: center;
+}
+.carousel .card-6{
+  background-image: url(../img/h6.jpg);
+  background-size: cover;
+	background-position: center;
+}
+.carousel .card-7{
+  background-image: url(../img/h7.jpg);
+  background-size: cover;
+	background-position: center;
+}
+.carousel .card-8{
+  background-image: url(../img/h8.jpg);
+  background-size: cover;
+	background-position: center;
+}
 .owl-dots{
   text-align: center;
   margin-top: 40px;
