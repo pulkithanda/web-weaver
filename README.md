@@ -1,33 +1,54 @@
-<h2 align="center"> The Glory Hotels Website </h2>
-
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/789454958453063702/893782792037625896/website.png" alt="" width="450px"/>
+<img src="https://github.com/pulkithanda/web-weaver/blob/master/wireframes/assets/logo.png" alt="" width="350px"/>
 </p>
 
+<h1 align="center"> The Glory Hotels  </h1>
+
 <p>
-⊛ This is a web dev project for a competition named web-weaver made with HTML, CSS, JS etc <br>
-⊛ The prompt was to make a hotel website with various sections listed below in detail some of them being: Covid-19 Guidelines Page, About Us Section,
-Hotels List Page, Gallery Page, Contact Us/Donate Section etc
-<br>
-⊛ Key features: completely modern, responsive, multi dynamic page website & toggler. </p>
+This is a responsive multi-page website promoting a fictional hotel chain organisation - <b>The Glory Hotels</b>, made for the Web Weaver event of IIT-B Techfest 2021.
+</p>
 
-<h2 align="center"> Sections :bookmark: </h2> 
-<p> --
-- -
-    - -
-    - -
-    - -
-    - - 
-- -
-    - -
-- -
-- - </p>
+## Pages
 
-<div align="center"><h2 align="center"> A demo and preview :movie_camera: </h2>
+- Homepage
+- About Section
+- Hotels Page
+- Login Page
+- COVID Guidelines Page
+- Donation Page
+- Membership Page
+- Booking Page
+- Dining Page
+- News Page
+
+## Key Features
+
+- Modern design
+- Responsive 
+- Multi dynamic page website
+- Smooth navigation
+
+## Tech Stack (Allowed)
+- HTML
+- CSS
+  
+## Run Locally
+
+Download the zip file of the project or clone it & then open the ```index.html``` file.
+
+```bash
+  git clone https://github.com/pulkithanda/web-weaver.git
+```
+
+## Hosted Website
+<b>Link:</b> https://thegloryhotels.netlify.app/
+
+
+<div align="center"><h2 align="center"> Website Preview </h2>
 <img src="--" width="250" height="150">
 <img src="--" width="250" height="150">
 <img src="--" width="250" height="150">
 <img src="--" width="250" height="150">
 <img src="--" width="250" height="150">
 <img src="--" width="250" height="150">
-<p align="center"> View live demo ().</div>
+
