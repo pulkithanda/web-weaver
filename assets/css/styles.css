@@ -1,4 +1,97 @@
+@font-face {
+  font-family: 'Product Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Regular'), url('../fonts/ProductSans-Regular.woff') format('woff');
+  }
+  
 
+  @font-face {
+  font-family: 'Product Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Italic'), url('../fonts/ProductSans-Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Thin Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Thin Regular'), url('../fonts/ProductSans-Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Light Regular'), url('../fonts/ProductSans-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Medium Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Medium Regular'), url('../fonts/ProductSans-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Black Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Black.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Thin Italic'), url('../fonts/ProductSans-ThinItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Light Italic'), url('../fonts/ProductSans-LightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Medium Italic'), url('../fonts/ProductSans-MediumItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Bold'), url('../fonts/ProductSans-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Bold Italic'), url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Product Sans Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Black Italic'), url('../fonts/ProductSans-BlackItalic.woff') format('woff');
+  }
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -65,7 +158,6 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
@@ -466,7 +558,7 @@ body.dark-theme {
   margin-top: 33px;
 }
 .content .subtitle {
-  font-family: Poppins;
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -476,7 +568,7 @@ body.dark-theme {
 }
 
 .content .title {
-  font-family: Poppins;
+  font-family: Product Sans Bold;
   margin-top: 83px;
   font-weight: 700;
   font-size: 110px;
@@ -522,7 +614,7 @@ body.dark-theme {
   font-size: 18.5px;
   font-weight: 500;
   letter-spacing: -.02rem;
-  font-family: Poppins;
+  font-family: Inter;
 }
 
 .search-box .input-box input {
@@ -531,8 +623,8 @@ body.dark-theme {
   outline: none;
   padding: 10px;
   width: 100%;
-  font-size: 1.1em;
-  font-family: Poppins;
+  font-size: 1em;
+  font-family: Inter;
 }
 
 .search-box .input-box input[type="Submit"]{
@@ -545,12 +637,12 @@ body.dark-theme {
   width: 100px;
 }
 .sec-head {
-  font-family: Poppins;
-  font-weight: 700;
+  font-family: Product Sans Bold;
+  /* font-weight: 700; */
   font-size: 60px;
 
   letter-spacing: -0.04em;
-  color: #000000;
+  /* color: #000000; */
 }
 
 
