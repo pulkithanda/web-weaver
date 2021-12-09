@@ -421,7 +421,7 @@ body.dark-theme {
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
-  background: var(--first-color);
+  background: #1185d3;
   right: 1rem;
   bottom: -20%;
   display: inline-flex;
@@ -433,13 +433,13 @@ body.dark-theme {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color);
+  background-color: #2059d4;
   opacity: 1;
 }
 
 .scrollup__icon {
-  font-size: 1.25rem;
-  color: var(--title-color);
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 /* Show Scroll Up*/
