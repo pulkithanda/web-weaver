@@ -31,7 +31,7 @@
 .card-form .form-body {
   padding: 10px;
 }
-.card-form .form-body .row {
+.card-form .form-body .row-d {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@
   padding: 10px;
 }
 
-.card-form .form-body .row input[type="text"] {
+.card-form .form-body .row-d input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -57,7 +57,7 @@
   color: #7c8086;
   font-size: 15.2px;
 }
-.card-form .form-body .row .form-block .button {
+.card-form .form-body .row-d .form-block .button {
   text-align: justify;
   display: inline-block;
   height: 30px;
@@ -79,7 +79,7 @@
   -o-transition: 800ms opacity, 800ms right;
   transition: 200ms background-color;
 }
-.card-form .form-body .row .form-block .button:hover {
+.card-form .form-body .row-d .form-block .button:hover {
   background-color: #3671f0;
   color: white;
 }
@@ -89,7 +89,7 @@
   padding: 15px 10px;
 }
 
-.row h1 {
+.row-d h1 {
   font-family: Product Sans Bold;
   font-size: 30px;
 }

@@ -926,3 +926,158 @@ body.dark-theme {
 .owl-dot:hover{
   background: #0072bc!important;
 }
+
+.vision {
+  font-family: Inter;
+	background-color: #d2d2d2;
+	background-image: url(../img/bg-pattern.svg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 100px;
+  margin-top: 150px;
+	height: auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+	margin-left: 25%;
+	justify-content: center;
+	align-items: center
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1
+}
+
+.vision-column {
+	background-color: #fff;
+	padding: 40px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px
+}
+
+.vision-column p {
+	font-size: 1.2rem;
+	text-align: justify;
+	padding: 20px
+}
+
+
+@media screen and (max-width:1205px) {
+	.vision-column p {
+		font-size: 1.1rem;
+		text-align: center
+	}
+
+	.vision-column {
+		width: 500px
+	}
+}
+
+@media screen and (max-width:613px) {
+	.vision-column {
+		width: 400px
+	}
+}
+
+@media screen and (max-width:500px) {
+	.vision-column {
+		width: 300px
+	}
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #17a2b8;
+} */
+
+.wrapper-rev{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter;
+}
+.wrapper-rev .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3a4;
+  /* box-shadow: 0px 4px 8px rgba(0,0,0,0.15); */
+}
+.wrapper-rev .box i.quote{
+  font-size: 20px;
+  color: #40a1e2;
+}
+.wrapper-rev .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #40a1e2;
+}
+.box .info .stars{
+  margin-top: 2px;
+}
+.box .info .stars i{
+  color: #40a1e2;
+  font-size: 20px;
+}
+.box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #40a1e2;
+  border-radius: 50%;
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.box:hover .content .image img{
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .wrapper-rev .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapper-rev .box{
+    width: 100%;
+  }
+}
