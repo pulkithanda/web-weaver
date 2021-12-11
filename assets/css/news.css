@@ -27,6 +27,11 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.123);
   overflow: hidden;
   width: 350px;
+  cursor: pointer;
+}
+
+.card:hover h4{
+  text-decoration: underline;
 }
 .card-header img {
   width: 100%;
