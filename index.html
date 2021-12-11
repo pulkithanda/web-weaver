@@ -1,433 +1,335 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+      <!-- Icons -->
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- =============== CSS =============== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <!-- jQuery Owl Carousel -->
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <title>Glory Hotels</title>
+      <!-- Tailwind CDN -->
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-        <!-- =============== FAVICON =============== -->
-        <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header" style="font-family: 'Inter'; background: rgb(255, 255, 255);">
-            <nav class="nav container">
-                <b><a href="index.html" class="nav__logo" style="font-family: 'Product Sans Bold'; letter-spacing: -.5px; font-size: 1.5rem;"> The Glory Hotels </a></b>
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="index.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Home</a> 
-                       </li>
-                        <li class="nav__item">
-                             <a href="#about" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >About</a> 
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/map.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Hotels</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/covid.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >COVID</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/donate.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Donate</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/membership.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Membership</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/dining.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Dining</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="pages/news.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >News</a>
-                        </li>
-                       
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
+      
+      <!-- Title -->
+      <title>Glory Hotels</title>
+   </head>
+   <body>
 
-
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-                <a href="pages/login.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
-                
-            </nav>
-        </header>
-
-<!-- <section class="relative w-full px-8 text-gray-700 bg-white body-font mt-2" style="font-family: 'Poppins';">
-    <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
-        <a href="#_" class="relative z-10 flex items-center w-auto text-2xl font-bold leading-none text-black select-none" style="letter-spacing: -.7px;">The Glory Hotels</a>
-
-        <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
-        
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">About</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Hotels</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">COVID-19</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Donate</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Membership</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">News</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-            <a href="#_" class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                <span class="block">Dining</span>
-                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
-                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900" x-transition:enter="transition ease duration-200" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
-                </span>
-            </a>
-
-        </nav>
-
-        <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
-            <a href="#" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">
-                Book now
-            </a>
-            <span class="inline-flex rounded-md shadow-sm">
-                <a href="#" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    Sign up
-                </a>
-            </span>
-        </div>
-    </div>
-</section> -->
-
-
-
-        <section class="banner">
-            <!-- <div class="background"> -->
-
-                <div class="content">
-                    
-                    <div class="title">The Glory Hotels</div>
-                    <div class="top-subtitle subtitle">Best Memories Start Here</div>
-                    <!-- <div class="banner-subtitle subtitle">Best Memories start here</div> -->
-                </div>
-
-                <div class="search-box">
-                    <div class="input-box">
-                        <p>Location</p> 
-                        <input type="text" name="" id="" placeholder="Delhi">
-                    </div>
-
-                    <div class="input-box">
-                        <p>Check-In Date</p>
-                        <input type="date" name="" id="" placeholder="01/01/2021">
-                    </div>
-
-                    <div class="input-box">
-                        <p>Guests</p>
-                        <input type="number" name="" id="" placeholder="100">
-                    </div>
-
-                    <div class="input-box">
-                    <br>
-                        <!-- <input type="submit"> -->
-                        <span class="inline-flex rounded-md shadow-sm">
-                            <a href="pages/book.html" style="padding: 12px 15px 12px 15px; font-size: 17px; font-family: Inter;" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                Book now
-                            </a>
-                        </span>
-                    </div>
-                <!-- </div> -->
+      <!-- Navigation Bar -->
+      <header class="header" id="header" style="font-family: 'Inter'; background: rgb(255, 255, 255);">
+         <nav class="nav container">
+            <b><a href="index.html" class="nav__logo" style="font-family: 'Product Sans Bold'; letter-spacing: -.5px; font-size: 1.5rem;"> The Glory Hotels </a></b>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Home</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">About</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/map.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Hotels</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/covid.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">COVID</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/donate.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Donate</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/membership.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Membership</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/dining.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Dining</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="pages/news.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">News</a>
+                  </li>
+               </ul>
             </div>
-        </section>
-
-        <section class="text-gray-600 body-font" id="about" style="font-family: 'Inter'; margin-top: 10%;">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" style="margin: auto; width: 70%;">
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwcmVzb3J0fGVufDB8fDB8fA%3D%3D&w=1000&q=80">
-              </div>
-              <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="sec-head">About Us
-                </h1>
-                <p class="mb-8 leading-relaxed" style="width: auto;">Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience. It combines modern style and comfort with the warmth of Old World hospitality. With more than 50 hotels and resorts across the world, it is one of the world's largest hotel chains. We believe in the values of Indian hospitality, and our crew is our most valuable asset, providing passionate and memorable hospitality to everyone we meet.</p>
-                <div class="flex justify-center">
-                    <span class="inline-flex rounded-md shadow-sm">
-                        <a href="index.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Know More</a>
-                    </span>
-                </div>
-              </div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class='bx bx-grid-alt'></i>
             </div>
-          </section>
-          
-          <section class="hotels" id="hotels">
-            <h1 class="sec-head" id="hotels-head">Our Hotels</h1>
-          </section>
-          <div class="wrapper">
-            <div class="carousel owl-carousel">
-               <div class="card card-1">
-            
-               </div>
-               <div class="card card-2">
-                  
-               </div>
-               <div class="card card-3">
-                  
-               </div>
-               <div class="card card-4">
-                  
-               </div>
-               <div class="card card-5">
-                  
-               </div>
-               <div class="card card-6">
-                  
+            <a href="pages/login.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
+         </nav>
+      </header>
+      
+      <!-- Banner Section -->
+      <section class="banner">
+         <div class="content">
+            <div class="title">The Glory Hotels</div>
+            <div class="top-subtitle subtitle">Best Memories Start Here</div>
+         </div>
+         <div class="search-box">
+            <div class="input-box">
+               <p>Location</p>
+               <input type="text" name="" id="" placeholder="Delhi">
             </div>
-            <div class="card card-7">
-                  
+            <div class="input-box">
+               <p>Check-In Date</p>
+               <input type="date" name="" id="" placeholder="01/01/2021">
             </div>
-            <div class="card card-8">
-                  
+            <div class="input-box">
+               <p>Guests</p>
+               <input type="number" name="" id="" placeholder="100">
             </div>
-            
+            <div class="input-box">
+               <br>
+               <span class="inline-flex rounded-md shadow-sm">
+               <a href="pages/book.html" style="padding: 12px 15px 12px 15px; font-size: 17px; font-family: Inter;" class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+               Book now
+               </a>
+               </span>
             </div>
          </div>
-         
-           <!-- vision section -->
+      </section>
 
-  <div class='vision'>
-    <div class='row'>
-      <div class='column'>
-          <div class='vision-column'>
-            <h1 class="sec-head">Our Vision</h1>
-            <p>The Glory Hotels shall be the world's largest and best hotel and resort chain, with upscale, mid-scale, and budget properties.
-                We will be dedicated to ensuring the well-being and self-worth of our coworkers, who are vital to our success. Making a difference in our community and in India as a whole. Our fundamental reason for being is to delight our guests, whose comfort, safety, security, and well-being are our primary concerns.
-                
-            </p>
-          </div>
+      <!-- About Section -->
+      <section class="text-gray-600 body-font" id="about" style="font-family: 'Inter'; margin-top: 10%;">
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" style="margin: auto; width: 70%;">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+               <img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwcmVzb3J0fGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+               <h1 class="sec-head">About Us
+               </h1>
+               <p class="mb-8 leading-relaxed" style="width: auto;">Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience. It combines modern style and comfort with the warmth of Old World hospitality. With more than 50 hotels and resorts across the world, it is one of the world's largest hotel chains. We believe in the values of Indian hospitality, and our crew is our most valuable asset, providing passionate and memorable hospitality to everyone we meet.</p>
+               <div class="flex justify-center">
+                  <span class="inline-flex rounded-md shadow-sm">
+                  <a href="index.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Know More</a>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Hotels Section -->
+      <section class="hotels" id="hotels">
+         <h1 class="sec-head" id="hotels-head">Our Hotels</h1>
+      </section>
+      <div class="wrapper">
+         <div class="carousel owl-carousel">
+            <div class="card card-1">
+            </div>
+            <div class="card card-2">
+            </div>
+            <div class="card card-3">
+            </div>
+            <div class="card card-4">
+            </div>
+            <div class="card card-5">
+            </div>
+            <div class="card card-6">
+            </div>
+            <div class="card card-7">
+            </div>
+            <div class="card card-8">
+            </div>
+         </div>
       </div>
-    </div>
-</div>
 
-<h1 class="sec-head" style="text-align: center; margin: 40px; margin-top: 100px;">Testimonials</h1>
-
-<div class="wrapper-rev">
-
-    <div class="box">
-        <i class='bx bxs-quote-left quote' ></i>
-      <p>Beyond 5 stars! Stayed last week at this wonderful hotel. Everything exceeds ones wildest dream of a hotel. On top they have the most wonderful staff, extremely kind and helpful with every wish.</p>
-      <div class="content">
-        <div class="info">
-          <div class="name">Oshane Smith</div>
-          <div class="stars">
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-
-          </div>
-        </div>
-        <div class="image">
-          <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
-        </div>
+      <!-- Vision Section -->
+      <div class='vision'>
+         <div class='row'>
+            <div class='column'>
+               <div class='vision-column'>
+                  <h1 class="sec-head">Our Vision</h1>
+                  <p>The Glory Hotels shall be the world's largest and best hotel and resort chain, with upscale, mid-scale, and budget properties.
+                     We will be dedicated to ensuring the well-being and self-worth of our coworkers, who are vital to our success. Making a difference in our community and in India as a whole. Our fundamental reason for being is to delight our guests, whose comfort, safety, security, and well-being are our primary concerns.
+                  </p>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-    <div class="box">
-        <i class='bx bxs-quote-left quote' ></i>
-      <p>This is indeed a place you do not want to leave, and when you do it is with one hope – to come back. Everything was great, staff was very helpful and we were extremely happy with the meeting!</p>
-      <div class="content">
-        <div class="info">
-          <div class="name">Rajesh Singh</div>
-          <div class="stars">
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bx-star'></i>
-          </div>
-        </div>
-        <div class="image">
-          <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
-        </div>
+
+      <!-- Testimonials Section -->
+      <h1 class="sec-head" style="text-align: center; margin: 40px; margin-top: 100px;">Testimonials</h1>
+      <div class="wrapper-rev">
+         <div class="box">
+            <i class='bx bxs-quote-left quote' ></i>
+            <p>Beyond 5 stars! Stayed last week at this wonderful hotel. Everything exceeds ones wildest dream of a hotel. On top they have the most wonderful staff, extremely kind and helpful with every wish.</p>
+            <div class="content">
+               <div class="info">
+                  <div class="name">Oshane Smith</div>
+                  <div class="stars">
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                  </div>
+               </div>
+               <div class="image">
+                  <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <i class='bx bxs-quote-left quote' ></i>
+            <p>This is indeed a place you do not want to leave, and when you do it is with one hope – to come back. Everything was great, staff was very helpful and we were extremely happy with the meeting!</p>
+            <div class="content">
+               <div class="info">
+                  <div class="name">Rajesh Singh</div>
+                  <div class="stars">
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bx-star'></i>
+                  </div>
+               </div>
+               <div class="image">
+                  <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="box">
+            <i class='bx bxs-quote-left quote' ></i>
+            <p>The service here has just been fantastic; whatever we needed was brought to us right away. The food was so delicious; the entire experience was really great. A must stay hotel for everyone.</p>
+            <div class="content">
+               <div class="info">
+                  <div class="name">Khushi Mittal</div>
+                  <div class="stars">
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star'></i>
+                     <i class='bx bxs-star-half'></i>
+                  </div>
+               </div>
+               <div class="image">
+                  <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-    <div class="box">
-        <i class='bx bxs-quote-left quote' ></i>
-      <p>The service here has just been fantastic; whatever we needed was brought to us right away. The food was so delicious; the entire experience was really great. A must stay hotel for everyone.</p>
-      <div class="content">
-        <div class="info">
-          <div class="name">Khushi Mittal</div>
-          <div class="stars">
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star'></i>
-            <i class='bx bxs-star-half'></i>
-          </div>
-        </div>
-        <div class="image">
-          <img src="https://png.pngtree.com/png-vector/20190930/ourlarge/pngtree-hooded-computer-hacker-with-laptop-icon-png-image_1762179.jpg" alt="">
-        </div>
+      
+      <!-- Footer Section -->
+      <div class="footer-dark" style="font-family: Inter;">
+         <footer>
+            <div class="bscontainer">
+               <div class="bsrow">
+                  <div class="bscol-md-2 item">
+                     <h3>Pages</h3>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/map.html">Hotels</a></li>
+                        <li><a href="pages/login.html">Login</a></li>
+                        <li><a href="pages/book.html">Book Hotel</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-2 item">
+                     <h3>Know More</h3>
+                     <ul>
+                        <li><a href="pages/membership.html">Membership</a></li>
+                        <li><a href="./index.html#team">Our Team</a></li>
+                        <li><a href="pages/news.html">News</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-2 item">
+                     <h3>Other Details</h3>
+                     <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                     </ul>
+                  </div>
+                  <div class="bscol-md-6 item text">
+                     <h3>The Glory Hotels</h3>
+                     <p>Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience with more than 50 hotels and resorts worldwide.</p>
+                  </div>
+                  <div class="social_links">
+                     <a href="https://www.instagram.com/">
+                     <span class="fa-stack fa-lg ig combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.facebook.com/">
+                     <span class="fa-stack fa-lg fb combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.youtube.com/">
+                     <span class="fa-stack fa-lg yt combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-youtube-play fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.twitter.com/">
+                     <span class="fa-stack fa-lg tw combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://codepen.io">
+                     <span class="fa-stack fa-lg gt combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-codepen fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                     <a href="https://www.linkedin.com/">
+                     <span class="fa-stack fa-lg tw combo">
+                        <i class="fa fa-circle fa-stack-2x circle"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
+                     </span>
+                     </a>
+                  </div>
+               </div>
+               <p class="copyright">The Glory Hotels © 2021</p>
+            </div>
+         </footer>
       </div>
-    </div>
-  </div>
 
-        <!--=============== FOOTER ===============-->
-        <div class="footer-dark" style="font-family: Inter;">
-            <footer>
-                <div class="bscontainer">
-                    <div class="bsrow">
-                        <div class="bscol-md-2 item">
-                            <h3>Pages</h3>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="pages/map.html">Hotels</a></li>
-                                <li><a href="pages/login.html">Login</a></li>
-                                <li><a href="pages/book.html">Book Hotel</a></li>
-                        
-                            </ul>
-                        </div>
-                        <div class="bscol-md-2 item">
-                            <h3>Know More</h3>
-                            <ul>
-                                <li><a href="pages/membership.html">Membership</a></li>
-                                <li><a href="./index.html#team">Our Team</a></li>
-                                <li><a href="pages/news.html">News</a></li>
-                            </ul>
-                        </div>
-                        <div class="bscol-md-2 item">
-                            <h3>Other Details</h3>
-                            <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Service</a></li>
-                                <!-- <li><a href="#">Careers</a></li> -->
-                            </ul>
-                        </div>
-                        <div class="bscol-md-6 item text">
-                            <h3>The Glory Hotels</h3>
-                            <p>Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience with more than 50 hotels and resorts worldwide.</p>
-                        </div>
-                        <div class="social_links">
-                            <a href="https://www.instagram.com/">
-                                <span class="fa-stack fa-lg ig combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
-                                  </span>
-                            </a>
-                            <a href="https://www.facebook.com/">
-                                <span class="fa-stack fa-lg fb combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
-                                  </span>
-                            </a>
-                            <a href="https://www.youtube.com/">
-                                <span class="fa-stack fa-lg yt combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse icon"></i>
-                                  </span>
-                            </a>
-                            <a href="https://www.twitter.com/">
-                                <span class="fa-stack fa-lg tw combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i>
-                                </span>
-                            </a>
-                            <a href="https://codepen.io">
-                                <span class="fa-stack fa-lg gt combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-codepen fa-stack-1x fa-inverse icon"></i>
-                                </span>
-                            </a>
-                            <a href="https://www.linkedin.com/">
-                                <span class="fa-stack fa-lg tw combo">
-                                    <i class="fa fa-circle fa-stack-2x circle"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="copyright">The Glory Hotels © 2021</p>
-                </div>
-            </footer>
-        </div>
+      <!-- Scroll Up Button -->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+      </a>
 
+      <!-- Owl Carousel JS -->
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:3,
+               nav: false
+             }
+           }
+         });
+      </script>
 
-       
-
-
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-        </a>
-        <script>
-            $(".carousel").owlCarousel({
-              margin: 20,
-              loop: true,
-              autoplay: true,
-              autoplayTimeout: 2000,
-              autoplayHoverPause: true,
-              responsive: {
-                0:{
-                  items:1,
-                  nav: false
-                },
-                600:{
-                  items:2,
-                  nav: false
-                },
-                1000:{
-                  items:3,
-                  nav: false
-                }
-              }
-            });
-         </script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    </body>
+      <!-- JS -->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>

@@ -1,59 +1,54 @@
-/*=============== SHOW MENU ===============*/
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-    
-    // Validate that variables exist
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            // We add the show-menu class to the div tag with the nav__menu class
-            nav.classList.toggle('show-menu')
-        })
-    }
+// Show Menu on Mobile
+const showMenu = (toggleId, navId) => {
+	const toggle = document.getElementById(toggleId),
+		nav = document.getElementById(navId)
+	if (toggle && nav) {
+		toggle.addEventListener('click', () => {
+			nav.classList.toggle('show-menu')
+		})
+	}
 }
-showMenu('nav-toggle','nav-menu')
+showMenu('nav-toggle', 'nav-menu')
 
-/*=============== REMOVE MENU MOBILE ===============*/
+// Remove Mobile Menu
 const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+function linkAction() {
+	const navMenu = document.getElementById('nav-menu')
+	navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader(){
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+// Change Background header
+function scrollHeader() {
+	const nav = document.getElementById('header')
+	if (this.scrollY >= 80) nav.classList.add('scroll-header');
+	else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SHOW SCROLL UP ===============*/
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+// Show Scroll Up button
+function scrollUp() {
+	const scrollUp = document.getElementById('scroll-up');
+	if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+	else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
+// Donations Page JS
 let donations = 0;
 let selected = false;
 let selId = 0;
-
-function setValue(element){
-  let val = element;
-  if(!selected){
-    val.style.background = "#3671f0";
-    val.style.color = "#fff";
-    selId = val;
-    selected = true;
-  }else{
-    selId.style.background = "#3671f0";
-    val.style.background = "#3671f0";
-    val.style.color = "#fff";
-    selId = val;
-  }
+function setValue(element) {
+	let val = element;
+	if (!selected) {
+		val.style.background = "#3671f0";
+		val.style.color = "#fff";
+		selId = val;
+		selected = true;
+	} else {
+		selId.style.background = "#3671f0";
+		val.style.background = "#3671f0";
+		val.style.color = "#fff";
+		selId = val;
+	}
 }

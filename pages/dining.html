@@ -1,368 +1,318 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+      <!-- CSS -->
+      <link rel="stylesheet" href="../assets/css/dining.css">
+      <link rel="stylesheet" href="../assets/css/styles.css">
 
-        <!-- =============== CSS =============== -->
-        <link rel="stylesheet" href="../assets/css/dining.css">
-        <link rel="stylesheet" href="../assets/css/styles.css">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <!-- Tailwind CDN -->
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
 
-
-        <title>Glory Hotels | Dining</title>
-
-        <!-- =============== FAVICON =============== -->
-        <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/898090686426017832/918392330493509642/unknown.png">
-
-    </head>
-    <body>
-
-    
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header" style="font-family: 'Inter'; background: rgb(255, 255, 255);">
-            <nav class="nav container">
-                <b><a href="../index.html" class="nav__logo" style="font-family: 'Product Sans Bold'; letter-spacing: -.5px; font-size: 1.5rem;"> The Glory Hotels </a></b>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../index.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Home</a> 
-                       </li>
-                        <li class="nav__item">
-                             <a href="../index.html#about" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >About</a> 
-                        </li>
-                        <li class="nav__item">
-                            <a href="map.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Hotels</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="covid.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >COVID</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="donate.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Donate</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="membership.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Membership</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="dining.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >Dining</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="news.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600"  >News</a>
-                        </li>
-                       
-
-
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-                <a href="login.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
-                
-            </nav>
-        </header>
-
-        <section class="banner" style="height: 85vh;">
-            <!-- <div class="background"> -->
-
-                <div class="content">
-                    
-                    <div class="title">Dining</div>
-                    <div class="top-subtitle subtitle">The Glory Hotels</div>
-                    <!-- <div class="banner-subtitle subtitle">Best Memories start here</div> -->
-                </div>
-
-
-        </section>
-
-        <h1 class="sec-head" style="text-align: center; margin-top: 100px;">Taste the difference</h1>
-        <div style="text-align: justify; font-family: Inter; font-size: 18px; width: 60%; margin: auto; margin-top: 10px;">When you dine at one of our restaurants, you will be treated to great dining and "futuristic cuisine". The restaurant provides a stylish environment for your next lunch or dinner, with sumptuous seating and aesthetic details.
-</div>
-<div class="py-1" style="font-family: Inter; margin-top: 70px;">
-    <div class="container mx-auto" style="padding-right: 100px; padding-left: 100px;">
-  
-      <div class=" lg:flex lg:-mx-4 mt-6 md:mt-12" style="margin: auto;">
-  
-        <div class=" lg:w-1/3 my-4 md:my-6 ">
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">Chinese Cuisine</h4>
-              <p class="text-gray-600">The outside world defines as Chinese cuisine as not a true cuisine but rather a composite of distinct regional cuisines.
-
-            </p>
+      <!-- Title -->
+      <title>Glory Hotels | Dining</title>
+   </head>
+   <body>
+      <!-- Navigation Bar -->
+      <header class="header" id="header" style="font-family: 'Inter'; background: rgb(255, 255, 255);">
+         <nav class="nav container">
+            <b><a href="../index.html" class="nav__logo" style="font-family: 'Product Sans Bold'; letter-spacing: -.5px; font-size: 1.5rem;"> The Glory Hotels </a></b>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="../index.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Home</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="../index.html#about" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">About</a> 
+                  </li>
+                  <li class="nav__item">
+                     <a href="map.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Hotels</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="covid.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">COVID</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="donate.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Donate</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="membership.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Membership</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="dining.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">Dining</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="news.html" class="nav__link font-medium leading-6 text-black-600 transition duration-150 ease-out hover:text-gray-600">News</a>
+                  </li>
+               </ul>
             </div>
-          </div>
-        </div>
-  
-        <div class=" lg:w-1/3 my-4 md:my-6" >
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">French Cuisine</h4>
-              <p class="text-gray-600">Overall, the cooking of France is the best in the Western World. And its classical and regional cuisines are superb.
-
-            </p>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class='bx bx-grid-alt'></i>
             </div>
-          </div>
-        </div>
-  
-        <div  class=" lg:w-1/3 my-4 md:my-6">
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">Italian Cuisine</h4>
-              <p class="text-gray-600">Italian cuisine is characterized by its extreme simplicity, with many dishes having only four to eight ingredients.
+            <a href="login.html" class="button button__header focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</a>
+         </nav>
+      </header>
 
-            </p>
+      <!-- Banner Section -->
+      <section class="banner" style="height: 85vh;">
+         <div class="content">
+            <div class="title">Dining</div>
+            <div class="top-subtitle subtitle">The Glory Hotels</div>
+         </div>
+      </section>
+
+      <!-- Dining Section -->
+      <h1 class="sec-head" style="text-align: center; margin-top: 100px;">Taste the difference</h1>
+      <div style="text-align: justify; font-family: Inter; font-size: 18px; width: 60%; margin: auto; margin-top: 10px;">When you dine at one of our restaurants, you will be treated to great dining and "futuristic cuisine". The restaurant provides a stylish environment for your next lunch or dinner, with sumptuous seating and aesthetic details.</div>
+      <div class="py-1" style="font-family: Inter; margin-top: 70px;">
+         <div class="container mx-auto" style="padding-right: 100px; padding-left: 100px;">
+            <div class=" lg:flex lg:-mx-4 mt-6 md:mt-12" style="margin: auto;">
+               <div class=" lg:w-1/3 my-4 md:my-6 ">
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">Chinese Cuisine</h4>
+                        <p class="text-gray-600">The outside world defines as Chinese cuisine as not a true cuisine but rather a composite of distinct regional cuisines.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" lg:w-1/3 my-4 md:my-6" >
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">French Cuisine</h4>
+                        <p class="text-gray-600">Overall, the cooking of France is the best in the Western World. And its classical and regional cuisines are superb.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div  class=" lg:w-1/3 my-4 md:my-6">
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">Italian Cuisine</h4>
+                        <p class="text-gray-600">Italian cuisine is characterized by its extreme simplicity, with many dishes having only four to eight ingredients.
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-        
-  
+         </div>
       </div>
-  
-    </div>
-  </div>
-
-  <div class=" py-1" style="font-family: Inter;">
-    <div class="container mx-auto" style="padding-right: 100px; padding-left: 100px;">
-  
-      <div class=" lg:flex lg:-mx-4 mt-6 md:mt-12" style="margin: auto;">
-  
-        <div class=" lg:w-1/3 my-4 md:my-6 ">
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">Indian Cuisine
-            </h4>
-              <p class="text-gray-600">Indian cuisine is not a single cuisine but a collection of differing regional cuisines; each is its own distinct Indian food.
-
-            </p>
+      <div class=" py-1" style="font-family: Inter;">
+         <div class="container mx-auto" style="padding-right: 100px; padding-left: 100px;">
+            <div class=" lg:flex lg:-mx-4 mt-6 md:mt-12" style="margin: auto;">
+               <div class=" lg:w-1/3 my-4 md:my-6 ">
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">Indian Cuisine
+                        </h4>
+                        <p class="text-gray-600">Indian cuisine is not a single cuisine but a collection of differing regional cuisines; each is its own distinct Indian food.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" lg:w-1/3 my-4 md:my-6" >
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">Japanese Cuisine
+                        </h4>
+                        <p class="text-gray-600">Though more complex cuisines exist, none comes close to matching Japan’s culinary aesthetics.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div  class=" lg:w-1/3 my-4 md:my-6">
+                  <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+                     <div class="p-6 md:py-8">
+                        <h4 class="title-price font-medium leading-tight text-2xl mb-2">Turkish Cuisine
+                        </h4>
+                        <p class="text-gray-600">This cuisine is a Middle Eastern culinary marriage and the nation has some of the most dedicated and talented cooks.
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-  
-        <div class=" lg:w-1/3 my-4 md:my-6" >
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">Japanese Cuisine
-            </h4>
-              <p class="text-gray-600">Though more complex cuisines exist, none comes close to matching Japan’s culinary aesthetics.
+         </div>
+      </div>
 
-            </p>
+      <!-- Order Section -->
+      <h1 class="sec-head" style="text-align: center; margin-top: 100px; margin-bottom: 60px;">Order Now</h1>
+      <div class="big">
+         <article class="recipe">
+            <div class="pizza-box">
+               <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg" width="1500" height="1368" alt="">
             </div>
-          </div>
-        </div>
-  
-        <div  class=" lg:w-1/3 my-4 md:my-6">
-          <div style="border: 1px solid rgba(200, 200, 200, 0.712); border-radius: 9px;" class=" border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
-            <div class="p-6 md:py-8">
-              <h4 class="title-price font-medium leading-tight text-2xl mb-2">Turkish Cuisine
-            </h4>
-              <p class="text-gray-600">This cuisine is a Middle Eastern culinary marriage and the nation has some of the most dedicated and talented cooks.
-
-            </p>
+            <div class="recipe-content">
+               <h1 class="recipe-title"><a href="#"> Pepperoni Pan Pizza</a></h1>
+               <p class="recipe-metadata">
+                  <span class="recipe-rating">★★★★<span>☆</span></span>
+                  <span class="recipe-votes">(54 votes)</span>
+               </p>
+               <p class="recipe-desc">This pepperoni pan pizza is made with a simple yet superlative from-scratch tomato sauce, two types of mozzarella, Parmesan cheese, pepperoni, and either store-bought or homemade dough.</p>
+               <br>    
+               <button class="recipe-save" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
+                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
+                  </svg>
+                  Order
+               </button>
             </div>
-          </div>
-        </div>
-      </div>  
-    </div>
-  </div>
+         </article>
+         <br><br>
+         <article class="recipe">
+            <div class="pizza-box">
+               <img src="https://media.istockphoto.com/photos/lasagna-on-a-square-white-plate-picture-id535851351?k=20&m=535851351&s=612x612&w=0&h=jdWOk9G_OOzHvPrvFrigqzk3EoucmIhUZr1-ey9NcGM=" width="1500" height="1368" alt="">
+            </div>
+            <div class="recipe-content">
+               <h1 class="recipe-title"><a href="#"> Lasagne</a></h1>
+               <p class="recipe-metadata">
+                  <span class="recipe-rating">★★★★<span>☆</span></span>
+                  <span class="recipe-votes">(54 votes)</span>
+               </p>
+               <p class="recipe-desc">Lasagne are a type of pasta, possibly one of the oldest types, made of very wide, flat sheets. Either term can also refer to an Italian dish made of stacked layers of lasagne alternating with fillings.</p>
+               <br>    
+               <button class="recipe-save" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
+                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
+                  </svg>
+                  Order
+               </button>
+            </div>
+         </article>
+         <br><br>
+         <article class="recipe">
+            <div class="pizza-box">
+               <img src="https://www.curiouscuisiniere.com/wp-content/uploads/2013/06/Japanese-Sushi-0458.450-450x270.jpg" width="1500" height="1368" alt="">
+            </div>
+            <div class="recipe-content">
+               <h1 class="recipe-title"><a href="#"> Sushi</a></h1>
+               <p class="recipe-metadata">
+                  <span class="recipe-rating">★★★★<span>☆</span></span>
+                  <span class="recipe-votes">(54 votes)</span>
+               </p>
+               <p class="recipe-desc">Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.</p>
+               <br>    
+               <button class="recipe-save" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
+                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
+                  </svg>
+                  Order
+               </button>
+            </div>
+         </article>
+         <br><br>
+         <article class="recipe">
+            <div class="pizza-box">
+               <img src="https://lp-cms-production.imgix.net/image_browser/tacos_mexico_G.jpg" width="1500" height="1368" alt="">
+            </div>
+            <div class="recipe-content">
+               <h1 class="recipe-title"><a href="#">Mexican Tacos</a></h1>
+               <p class="recipe-metadata">
+                  <span class="recipe-rating">★★★★<span>☆</span></span>
+                  <span class="recipe-votes">(54 votes)</span>
+               </p>
+               <p class="recipe-desc">A taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.</p>
+               <br>    
+               <button class="recipe-save" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000">
+                     <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/>
+                  </svg>
+                  Order
+               </button>
+            </div>
+         </article>
+         <br><br>
+      </div>
 
-  <h1 class="sec-head" style="text-align: center; margin-top: 100px; margin-bottom: 60px;">Order Now</h1>
-
-  <div class="big">
-    <article class="recipe">
-       <div class="pizza-box">
-           <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg" width="1500" height="1368" alt="">
-       </div>
-       <div class="recipe-content">
-
-           <h1 class="recipe-title"><a href="#"> Pepperoni Pan Pizza</a></h1>
-
-           <p class="recipe-metadata">
-               <span class="recipe-rating">★★★★<span>☆</span></span>
-               <span class="recipe-votes">(54 votes)</span>
-           </p>
-
-           <p class="recipe-desc">This pepperoni pan pizza is made with a simple yet superlative from-scratch tomato sauce, two types of mozzarella, Parmesan cheese, pepperoni, and either store-bought or homemade dough.</p>
-<br>    
-           <button class="recipe-save" type="button">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000"><path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/></svg>
-               Order
-           </button>
-
-       </div>
-   </article>
-<br><br>
-   <article class="recipe">
-    <div class="pizza-box">
-        <img src="https://media.istockphoto.com/photos/lasagna-on-a-square-white-plate-picture-id535851351?k=20&m=535851351&s=612x612&w=0&h=jdWOk9G_OOzHvPrvFrigqzk3EoucmIhUZr1-ey9NcGM=" width="1500" height="1368" alt="">
-    </div>
-    <div class="recipe-content">
-
-        <h1 class="recipe-title"><a href="#"> Lasagne</a></h1>
-
-        <p class="recipe-metadata">
-            <span class="recipe-rating">★★★★<span>☆</span></span>
-            <span class="recipe-votes">(54 votes)</span>
-        </p>
-
-        <p class="recipe-desc">Lasagne are a type of pasta, possibly one of the oldest types, made of very wide, flat sheets. Either term can also refer to an Italian dish made of stacked layers of lasagne alternating with fillings.</p>
-<br>    
-        <button class="recipe-save" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000"><path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/></svg>
-            Order
-        </button>
-
-    </div>
-</article>
-<br><br>
-<article class="recipe">
-    <div class="pizza-box">
-        <img src="https://www.curiouscuisiniere.com/wp-content/uploads/2013/06/Japanese-Sushi-0458.450-450x270.jpg" width="1500" height="1368" alt="">
-    </div>
-    <div class="recipe-content">
-
-        <h1 class="recipe-title"><a href="#"> Sushi</a></h1>
-
-        <p class="recipe-metadata">
-            <span class="recipe-rating">★★★★<span>☆</span></span>
-            <span class="recipe-votes">(54 votes)</span>
-        </p>
-
-        <p class="recipe-desc">Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.</p>
-<br>    
-        <button class="recipe-save" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000"><path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/></svg>
-            Order
-        </button>
-
-    </div>
-</article>
-<br><br>
-<article class="recipe">
-    <div class="pizza-box">
-        <img src="https://lp-cms-production.imgix.net/image_browser/tacos_mexico_G.jpg" width="1500" height="1368" alt="">
-    </div>
-    <div class="recipe-content">
-
-        <h1 class="recipe-title"><a href="#">Mexican Tacos</a></h1>
-
-        <p class="recipe-metadata">
-            <span class="recipe-rating">★★★★<span>☆</span></span>
-            <span class="recipe-votes">(54 votes)</span>
-        </p>
-
-        <p class="recipe-desc">A taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand.</p>
-<br>    
-        <button class="recipe-save" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000"><path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor"/></svg>
-            Order
-        </button>
-
-    </div>
-</article>
-<br><br>
-</div>
-
-
-                 <!--=============== FOOTER ===============-->
-                 <div class="footer-dark" style="font-family: Inter;">
-                    <footer>
-                        <div class="bscontainer">
-                            <div class="bsrow">
-                                <div class="bscol-md-2 item">
-                                    <h3>Pages</h3>
-                                    <ul>
-                                        <li><a href="../index.html">Home</a></li>
-                                        <li><a href="map.html">Hotels</a></li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="book.html">Book Hotel</a></li>
-                                
-                                    </ul>
-                                </div>
-                                <div class="bscol-md-2 item">
-                                    <h3>Know More</h3>
-                                    <ul>
-                                        <li><a href="membership.html">Membership</a></li>
-                                        <li><a href="../index.html#team">Our Team</a></li>
-                                        <li><a href="news.html">News</a></li>
-                                    </ul>
-                                </div>
-                                <div class="bscol-md-2 item">
-                                    <h3>Other Details</h3>
-                                    <ul>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms of Service</a></li>
-                                        <!-- <li><a href="#">Careers</a></li> -->
-                                    </ul>
-                                </div>
-                                <div class="bscol-md-6 item text">
-                                    <h3>The Glory Hotels</h3>
-                                    <p>Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience with more than 50 hotels and resorts worldwide.</p>
-                                </div>
-                                <div class="social_links">
-                                    <a href="https://www.instagram.com/">
-                                        <span class="fa-stack fa-lg ig combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
-                                          </span>
-                                    </a>
-                                    <a href="https://www.facebook.com/">
-                                        <span class="fa-stack fa-lg fb combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
-                                          </span>
-                                    </a>
-                                    <a href="https://www.youtube.com/">
-                                        <span class="fa-stack fa-lg yt combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-youtube-play fa-stack-1x fa-inverse icon"></i>
-                                          </span>
-                                    </a>
-                                    <a href="https://www.twitter.com/">
-                                        <span class="fa-stack fa-lg tw combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i>
-                                        </span>
-                                    </a>
-                                    <a href="https://codepen.io">
-                                        <span class="fa-stack fa-lg gt combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-codepen fa-stack-1x fa-inverse icon"></i>
-                                        </span>
-                                    </a>
-                                    <a href="https://www.linkedin.com/">
-                                        <span class="fa-stack fa-lg tw combo">
-                                            <i class="fa fa-circle fa-stack-2x circle"></i>
-                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="copyright">The Glory Hotels © 2021</p>
-                        </div>
-                    </footer>
-                </div>
-        <!--=============== MAIN JS ===============-->
-        <script src="../assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    </body>
+      <!-- Footer -->
+      <div class="footer-dark" style="font-family: Inter;">
+        <footer>
+           <div class="bscontainer">
+              <div class="bsrow">
+                 <div class="bscol-md-2 item">
+                    <h3>Pages</h3>
+                    <ul>
+                       <li><a href="../index.html">Home</a></li>
+                       <li><a href="map.html">Hotels</a></li>
+                       <li><a href="login.html">Login</a></li>
+                       <li><a href="book.html">Book Hotel</a></li>
+                    </ul>
+                 </div>
+                 <div class="bscol-md-2 item">
+                    <h3>Know More</h3>
+                    <ul>
+                       <li><a href="membership.html">Membership</a></li>
+                       <li><a href="../index.html#team">Our Team</a></li>
+                       <li><a href="news.html">News</a></li>
+                    </ul>
+                 </div>
+                 <div class="bscol-md-2 item">
+                    <h3>Other Details</h3>
+                    <ul>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                 </div>
+                 <div class="bscol-md-6 item text">
+                    <h3>The Glory Hotels</h3>
+                    <p>Over the last 25 years, the Glory Hotels organisation has been known for dependably providing the best Indian hospitality experience with more than 50 hotels and resorts worldwide.</p>
+                 </div>
+                 <div class="social_links">
+                    <a href="https://www.instagram.com/">
+                    <span class="fa-stack fa-lg ig combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-instagram fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                    <span class="fa-stack fa-lg fb combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-facebook fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                    <span class="fa-stack fa-lg yt combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-youtube-play fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                    <span class="fa-stack fa-lg tw combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-twitter fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                    <a href="https://codepen.io">
+                    <span class="fa-stack fa-lg gt combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-codepen fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                    <span class="fa-stack fa-lg tw combo">
+                       <i class="fa fa-circle fa-stack-2x circle"></i>
+                       <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                    </a>
+                 </div>
+              </div>
+              <p class="copyright">The Glory Hotels © 2021</p>
+           </div>
+        </footer>
+     </div>
+     
+     <!-- JS -->
+     <script src="../assets/js/main.js"></script>
+  </body>
 </html>

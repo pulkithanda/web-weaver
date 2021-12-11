@@ -1,95 +1,97 @@
 .card-form {
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  align-items: center;
-  font-family: Inter;
-  width: 40em;
-  height: 30em;
-  border-radius: 10px;
-  /* background: 333c4a; */
-  box-shadow: 0 27px 55px 0 rgba(179, 179, 179, 0.3),
-    0 17px 17px 0 rgba(133, 133, 133, 0.15);
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	align-items: center;
+	font-family: Inter;
+	width: 40em;
+	height: 30em;
+	border-radius: 10px;
+	box-shadow: 0 27px 55px 0 rgba(179, 179, 179, 0.3), 0 17px 17px 0 rgba(133, 133, 133, 0.15)
 }
+
 .card-form .form-indicator {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 0.5em;
-  font-size: 20px;
-  font-weight: bold;
-  background: #3671f0;
-  border-radius: 10px 10px 0 0;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: .5em;
+	font-size: 20px;
+	font-weight: bold;
+	background: #3671f0;
+	border-radius: 10px 10px 0 0
 }
+
 .card-form .form-body {
-  padding: 10px;
+	padding: 10px
 }
+
 .card-form .form-body .row-d {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	padding: 10px
 }
 
 .card-form .form-body .row-d input[type="text"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  margin: 0 15px;
-  height: 35px;
-  padding: 5px 15px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  background: #ffffff;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.089);
-  color: #7c8086;
-  font-size: 15.2px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	margin: 0 15px;
+	height: 35px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	outline: 0;
+	border: 0;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.089);
+	color: #7c8086;
+	font-size: 15.2px
 }
+
 .card-form .form-body .row-d .form-block .button {
-  text-align: justify;
-  display: inline-block;
-  height: 30px;
-  /* line-height: 30px; */
-  border: none;
-  border-radius: 2px;
-  padding: 10px;
-  padding-bottom: 30px;
-  background: #ffffff;
-  border-radius: 5px;
-  border: 1px solid #3671f0;
-  color: #3671f0;
-  margin: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  -webkit-transition: 400ms background-color;
-  -moz-transition: 800ms opacity, 800ms right;
-  -ms-transition: 800ms opacity, 800ms right;
-  -o-transition: 800ms opacity, 800ms right;
-  transition: 200ms background-color;
+	text-align: justify;
+	display: inline-block;
+	height: 30px;
+	border: 0;
+	border-radius: 2px;
+	padding: 10px;
+	padding-bottom: 30px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #3671f0;
+	color: #3671f0;
+	margin: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-transition: 400ms background-color;
+	-moz-transition: 800ms opacity, 800ms right;
+	-ms-transition: 800ms opacity, 800ms right;
+	-o-transition: 800ms opacity, 800ms right;
+	transition: 200ms background-color
 }
+
 .card-form .form-body .row-d .form-block .button:hover {
-  background-color: #3671f0;
-  color: white;
+	background-color: #3671f0;
+	color: white
 }
 
 .card-form .form-footer {
-  margin: 0 25px 15px 25px;
-  padding: 15px 10px;
+	margin: 0 25px 15px 25px;
+	padding: 15px 10px
 }
 
 .row-d h1 {
-  font-family: Product Sans Bold;
-  font-size: 30px;
+	font-family: Product Sans Bold;
+	font-size: 30px
 }
