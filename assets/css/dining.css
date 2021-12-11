@@ -1,0 +1,83 @@
+.title-price {
+    font-family: Product Sans Bold;
+    font-size: 30px;
+}
+.big {
+    width: clamp(320px, 65%, 65%);
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: Inter;
+}
+
+.recipe, .pizza-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pizza-box {
+    flex: 3 1 30ch;
+    height: calc(282px + 5vw);
+    overflow: hidden;
+}
+.pizza-box img {
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.recipe {
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.recipe-content {
+    padding: 16px 32px;
+    flex: 4 1 40ch;
+}
+
+.recipe-title {
+    margin: 0;
+    font-size: clamp(1.4em, 2.1vw, 2.1em);
+    font-family: Inter;
+    font-weight: 500;
+}
+.recipe-title a {
+    text-decoration: none;
+    color: inherit;
+}
+.recipe-metadata {
+    margin: 0;
+}
+.recipe-rating {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+}
+.recipe-rating span {
+    color: var(--grey);
+}
+.recipe-votes {
+    font-size: 0.825em;
+    font-style: italic;
+    color: var(--lightgrey);
+}
+.recipe-save {
+    display: flex;
+    align-items: center;
+    padding: 6px 14px 6px 12px;
+    border-radius: 4px;
+    border: 2px solid currentColor;
+    color: var(--primary);
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.recipe-save svg {
+    margin-right: 6px;
+}
+
