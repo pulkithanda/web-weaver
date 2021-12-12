@@ -20,6 +20,7 @@ This is a responsive multi-page website promoting a fictional hotel chain organi
 - Booking Page
 - Dining Page
 - News Page
+- Teams Page
 
 ## Key Features
 
