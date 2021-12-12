@@ -73,7 +73,7 @@
 }
 
 .moving-image-bg {
-  background: url("https://ivang-design.com/svg-load/hotel/move-img@2x.jpg")
+  background: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.5)) , url("https://ivang-design.com/svg-load/hotel/move-img@2x.jpg")
     repeat fixed;
   background-size: cover;
   position: absolute;
@@ -83,6 +83,7 @@
   bottom: 0;
   z-index: 1;
   width: 100%;
+  /* opacity: 0.75; */
 }
 
 .case-study-wrapper {
