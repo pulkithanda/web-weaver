@@ -43,12 +43,4 @@ Download the zip file of the project or clone it & then open the ```index.html``
 ## Hosted Website
 <b>Link:</b> https://thegloryhotels.netlify.app/
 
-<h2> Website Preview </h2>
-<div align="center">
-<img src="--" width="250" height="150">
-<img src="--" width="250" height="150">
-<img src="--" width="250" height="150">
-<img src="--" width="250" height="150">
-<img src="--" width="250" height="150">
-<img src="--" width="250" height="150">
 
