@@ -3,8 +3,6 @@ console.log("loaded");
 (function ($) {
   "use strict";
 
-  //Page cursors
-
   document
     .getElementsByTagName("body")[0]
     .addEventListener("mousemove", function (n) {
@@ -40,7 +38,7 @@ console.log("loaded");
   window.setInterval(function () {
     pos++;
     document.getElementsByClassName(
-      "moving-image"
+      "moving-image-bg"
     )[0].style.backgroundPosition = pos + "px 0px";
   }, 18);
 
