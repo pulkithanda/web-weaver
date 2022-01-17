@@ -5,7 +5,7 @@
 <h1 align="center"> The Glory Hotels  </h1>
 
 <p>
-This is a responsive multi-page website promoting a fictional hotel chain organisation - <b>The Glory Hotels</b>, made for the Web Weaver event of IIT-B Techfest 2021.
+This is a responsive multi-page website promoting a fictional hotel chain organisation - <b>The Glory Hotels</b>, made for the Web Weaver event of IIT-B Techfest 2021. (FIRST POSITION)
 </p>
 
 ## Pages
